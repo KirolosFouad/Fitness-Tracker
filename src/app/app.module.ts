@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NutritionComponent } from './nutrition/nutrition.component';
 import { ExerciseComponent } from './exercise/exercise.component';
+import { UsersComponent } from './users/users.component';
 import { RouterOutlet } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -15,13 +18,14 @@ import { RouterOutlet } from '@angular/router';
     HomeComponent,
     NutritionComponent,
     ExerciseComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterOutlet
   ],
-  providers: [],
+  providers: [ provideHttpClient() ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
