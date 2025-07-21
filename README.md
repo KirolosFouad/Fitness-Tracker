@@ -29,7 +29,6 @@ The Fitness Tracker is an application that allows users to log their workouts, t
 - HTML
 - CSS
 - JavaScript
-- React
 - Node.js
 - Angular
 
